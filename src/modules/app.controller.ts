@@ -1,9 +1,9 @@
 import { Get, Controller } from '@nestjs/common'
 
 @Controller()
-export class AppController {
+export default class AppController {
 	@Get()
-	root(): string {
+	root() : string {
     return 'Hello World!'
   }
 }
